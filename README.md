@@ -1,70 +1,62 @@
-# surviving-cbc
+# **Surviving+CBC**–Group Project 3 of 3
+
+![Surviving+CBC](./client/src/surviving-cbc.png)
+
+Please visit the deployed application by clicking the following link: [**Surviving-CBC**](https://survivingcbc.herokuapp.com/).  
+The original repository can be viewed here: [**Surviving+CBC**](https://github.com/lilyhi/surviving-cbc).  
+My forked copy of the repository can be viewed here: [**Surviving+CBC**](https://github.com/lilyhi/surviving-cbc).
+
+### Table of Contents
+
+-   [Contributors](#contributors)
+-   [Description](#description)
+-   [Usage](#usage)
+-   [Future Developments](#future-developments)
+
+## Contributors
+
+Made with ❤️️ by the original four **S+CBC** Survivors!
+
+> -   [**Lily**](https://github.com/lilyhi)
+> -   [**Luke**](https://github.com/Shilohjones194)
+> -   [**Matt**](https://github.com/LifeInvaderr)
+> -   [**Pablo**](https://github.com/pablodlc)
+
+I was on the front-end team, handling the views. In an early meeting, we drafted a wireframe to structure our page. My primary contribution was structuring the views and styling with React, and helping structure the front-end router.
 
 ## Description
-It gets pretty hard learning dozens of languages, programs, and applications during these Coding BootCamps, without really having a strong support system to lean on.
-This MERN stack application is designed to bring all prior, current, and oncoming students together to help out one another, when the help isn't typically there, when you need it. 
-When you land on the page, you can immediately search the subject you need help with, hit enter and it will bring you the most recent posts from previous/current students. The students that graduated tend to post some of their best notes or studying techniques that helped them, when they were in your shoes. In addition to clicking enter on the subject you needed help on, there is a section dedicated to upcoming Events/Study Groups/ meetings (planned by the community). Once you create an account you can start posting what helps best for you and schedule your own events with your new Coding Community.
 
+This group project is a full-stack social network application intended for boot camp students and alumni. Our concept came to us relatively quickly. The inspiration being prospective coding boot camp survivors ourselves. We decided to develop a two-fold application: a way for boot camp classmates to keep in touch while growing a welcoming development community and to be a resource where users can interact and help each other with programming questions.
 
-
-## Deployed Link
-
-
-
-
-
-## Developers & Collaborators Profile:
-* GitHub: [lilyhi](https://github.com/lilyhi)
-* GitHub: [pablodlc](https://github.com/pablodlc)
-* GitHub: [LifeInvaderr](https://github.com/LifeInvaderr)
-* GitHub: [Shilohjones194](https://github.com/Shilohjones194)
-
-## Table of Contents
-* [Installation](#installation)
-* [Usage](#usage)
-* [license](#license)
-* [Tests](#tests)
-* [Questions](#questions)
-* [ProjectRequirements](#ProjectRequirements)
-## Installation
-
+**Surviving+CBC** ("**S+CBC**") features authentication for sign up and log in functionality and is powered by MongoDB to store `User`, `Post`, and `Event` data, which are broken into `Subject`s. In the leftmost column on the homepage is a column of buttons with `Subject`s as their text content. Clicking on these `Subject` buttons will update the second column to display a series of `Post`s related to the `Subject` button, and the third column a series of related `Event`s. `Post`s are the social aspect of `S+CBC`, intended for sharing small bits of information with other users or for scheduling `Event`s. `Event`s are meant for posting details about study sessions or seminars related to the active `Subject` button, along with times, location and pertinent links.
 
 ## Usage
 
-## License
-![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)
+Navigate to the application here: [**Surviving-CBC**](https://survivingcbc.herokuapp.com/).  
+There are several buttons with `Subject`s as their text content. Clicking on them will display `Post`s about the `Subject` in the second column and related `Event`s in the third column. All of the page content can be viewed by anyone who accesses the page. However, only registered users can add a `Post` or `Event`. To sign up as a user, or survivor, the user cab click on the `Sign Up` link in the `Navbar`, or navigate https://survivingcbc.herokuapp.com and append any of the following to the URL:
 
+-   `/signup`
+-   `/register`
+-   `/iwillsurvive`
 
-## Tests
+Once at the sign up page, the user needs to enter a username, a valid email address, and a password. When those three inputs are provided and the Submit button is clicked, the user is logged in, redirected to the homepage, and then can add `Post`s and `Event`s.
 
+## Future Developments
 
-## Questions
-* Email: Please contact me at [Shilohjonezz@gmail.com](mailto:Shilohjonezz@gmail.com) if you have any questions.
-## ProjectRequirements
-* Use React for the front end.
-* Use GraphQL with a Node.js and Express.js server.
-* Use MongoDB and the Mongoose ODM for the database.
-* Use queries and mutations for retrieving, adding, updating, and deleting data.
-* Be deployed using Heroku (with data).
-* Have a polished UI.
-* Be responsive.
-* Be interactive (i.e., accept and respond to user input).
-* Include authentication (JWT).
-* Protect sensitive API key information on the server.
-* Have a clean repository that meets quality coding standards (file structure, naming conventions, best practices for class and id naming conventions, indentation, high-quality comments, etc.).
-* Have a high-quality README (with unique name, description, technologies used, screenshot, and link to deployed application).
-Finally, you must add your project to the portfolio that you created in Module 20.
-You should also consider the following suggestions to help your project stand out:
-## CSS Styling
-Instead of using a CSS library like Bootstrap, consider one of the following suggestions:
-* Look into the concept of **CSS-in-JS**, which abstracts CSS to the component level, using JavaScript to describe styles in a declarative and maintainable way. Some popular libraries include [styled-components](https://styled-components.com/) and [Emotion](https://emotion.sh/docs/introduction).
-* Try using a component library, such as [Semantic UI](https://semantic-ui.com/), [Chakra UI](https://chakra-ui.com/), or [Ant Design](https://ant.design/).
-* Create all the CSS for your application just using CSS.
-Ultimately, it doesn't matter which of these options you choose&mdash;it just needs to look professional and be mobile-friendly.
-## Payment Platform
-Consider integrating the Stripe payment platform. Even if you don’t create an e-commerce application, you could set up your site to accept charitable donations.
-## Bonus
-Although this is not a requirement for your project, see if you can also implement functionality to meet the minimum requirements of a PWA:
-* Uses a web manifest
-* Uses a service worker for offline functionality
-* Is installable
+Presently, **S+CBC** is unfinished. We struggled to connect the front and back ends, so none of the application's data can be interacted with or seen. That would be priority one.
+
+The state of the app isn't reflected on the page. Next would be to add hooks in order to update the `Navbar` to say "Sign Up" and "Log In" when the user isn't logged in, and "Log Out" when the user is logged in.
+
+The next step we discussed was to add reactions to `Post`s and `Event`s so that users can interact with one another.
+
+After those steps are accomplished, we want to enable friending for users to make it easier to keep in touch with one another and find each others' activity more easily.
+
+## Questions?
+
+Please feel free to contact me with any questions or comments, or visit my GitHub to see more of my work.
+
+-   [Contact me by email](mailto:pablodlc@gmail.com)
+-   [GitHub profile: /pablodlc](https://github.com/pablodlc)
+-   [Lily's original **Surviving+CBC** GitHub Repo](https://github.com/lilyhi/surviving-cbc)
+-   [My forked copy of the **Surviving+CBC** GitHub Repo](https://github.com/pablodlc/surviving-cbc)
+-   [Visit my portfolio!](https://pablodlc.github.io)

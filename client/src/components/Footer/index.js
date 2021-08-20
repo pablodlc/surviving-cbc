@@ -15,7 +15,7 @@ const Footer = () => {
                 <Row style={{ width: '75%', margin: '0 auto' }}>
                     <h6 className="" style={{ textAlign: 'center', fontFamily: "'Lato', sans-serif", paddingTop: "6px", fontWeight: 'bold' }}>Surviving<span style={{ fontSize: '1.5REM', fontWeight: 'bold', color: 'green' }}>+</span>CBC wants your feedback! Suggestions, comments, concerns, and questions can be sent to the creators of Surviving CBC using the links below.</h6>
                 </Row>
-                <h6 className="" style={{ textAlign: 'center', fontFamily: "'Lato', sans-serif", paddingTop: '6px', fontWeight: 'bold' }}>Made with ❤️️ by the original four SCBC Survivors!</h6>
+                <h6 className="" style={{ textAlign: 'center', fontFamily: "'Lato', sans-serif", paddingTop: '6px', fontWeight: 'bold' }}></h6>
 
                 <Row style={{ width: '75%', margin: '0 auto', paddingTop: '6px' }}>
                     <Col>
